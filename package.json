@@ -1,33 +1,39 @@
 {
-  "name": "nodejsnew",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SapNguyen/nodejs_blog.git"
-  },
-  "keywords": [
-    "f8",
-    "blog",
-    "f8",
-    "nodejs",
-    "nodejs"
-  ],
-  "author": "Sap",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SapNguyen/nodejs_blog/issues"
-  },
-  "homepage": "https://github.com/SapNguyen/nodejs_blog#readme",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
-  }
+    "name": "nodejsnew",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "nodemon --inspect src/index.js",
+        "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier --write \"**/*.js\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SapNguyen/nodejs_blog.git"
+    },
+    "keywords": [
+        "f8",
+        "blog",
+        "f8",
+        "nodejs",
+        "nodejs"
+    ],
+    "author": "Sap",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SapNguyen/nodejs_blog/issues"
+    },
+    "homepage": "https://github.com/SapNguyen/nodejs_blog#readme",
+    "dependencies": {
+        "express": "^4.18.2",
+        "express-handlebars": "^7.1.2"
+    },
+    "devDependencies": {
+        "morgan": "^1.10.0",
+        "node-sass": "^9.0.0",
+        "nodemon": "^3.1.0",
+        "prettier": "^3.2.5"
+    }
 }
