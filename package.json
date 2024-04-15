@@ -26,11 +26,27 @@
         "url": "https://github.com/SapNguyen/nodejs_blog/issues"
     },
     "homepage": "https://github.com/SapNguyen/nodejs_blog#readme",
+    "lint-staged": {
+        "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.5.2",
         "express": "^4.18.2",
-        "express-handlebars": "^7.1.2"
+        "express-handlebars": "^7.1.2",
+        "method-override": "^3.0.0",
+        "mongoose": "^8.3.1",
+        "mongoose-delete": "^1.0.2",
+        "mongoose-sequence": "^6.0.1",
+        "mongoose-slug-updater": "^3.3.0"
     },
     "devDependencies": {
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2",
         "morgan": "^1.10.0",
         "node-sass": "^9.0.0",
         "nodemon": "^3.1.0",
